@@ -10,7 +10,7 @@ if (knowledge.GIT == null) {
 }
 ```
 
-== Let's start ==
+==Let's start==
 
 ## Editor issue
 
@@ -27,17 +27,17 @@ The issue only happened when user use Vundle in vi
 but nobody know the root cause. Below is someone's comments:
 
 >just went through this process as well:
+>1. Install Vundle per instructions
+>2. Try to commit something as per usual with git commit
+>3. Type a commit message using $EDITOR, which is set to vi
+>4. Watch commit fail with "error: There was a problem with the editor 'vi'."
+>5. Search for a solution, find this blog post
+>6. Try the workaround it suggests (git config --global core.editor $(which vim)), notice that it works
+>7. Notice that it also works to reset $EDITOR from vi to /usr/bin/vim
+>8. Feel frustrated, because no one seems to understand why this is happening
+>9. Search for related issues in the Vundle GitHub repo, find this issue
+>10. Remain frustrated because while everyone agrees on the workaround, there is still no actual explanation or solution
+>11. Realize that this is a cycle that many more users will struggle through unless a proper fix shows up
+>12. Write this comment in hopes the issue might be reopened
 
->Install Vundle per instructions
->Try to commit something as per usual with git commit
->Type a commit message using $EDITOR, which is set to vi
->Watch commit fail with "error: There was a problem with the editor 'vi'."
->Search for a solution, find this blog post
->Try the workaround it suggests (git config --global core.editor $(which vim)), notice that it works
->Notice that it also works to reset $EDITOR from vi to /usr/bin/vim
->Feel frustrated, because no one seems to understand why this is happening
->Search for related issues in the Vundle GitHub repo, find this issue
->Remain frustrated because while everyone agrees on the workaround, there is still no actual explanation or solution
->Realize that this is a cycle that many more users will struggle through unless a proper fix shows up
->Write this comment in hopes the issue might be reopened
 
