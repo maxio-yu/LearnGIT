@@ -40,4 +40,10 @@ but nobody know the root cause. Below is someone's comments:
 >11. Realize that this is a cycle that many more users will struggle through unless a proper fix shows up
 >12. Write this comment in hopes the issue might be reopened
 
+## Git log/reset/reflog
+
+- Git log show commit history which before the HEAD
+- Git reset change the HEAD (a pointer)
+- Git reflog checks all command you entered.
+
 
