@@ -50,3 +50,9 @@ but nobody know the root cause. Below is someone's comments:
 
 - Git add is for change, not file
 - if you change the file after you add it, the later change will not be submitted if you commit
+- test line after add README.md
+
+## Git checkout for file
+
+- Git checkout revert the changes which is not been added
+- That means if you already use git add, the file will not be reverted
