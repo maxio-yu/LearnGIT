@@ -1,4 +1,4 @@
-# This is a study memo
+#This is a study memo
 
 - Last time I use GIT was about 4 years ago when I was in Marvell
 - I am using Perforce in my company
@@ -56,3 +56,14 @@ but nobody know the root cause. Below is someone's comments:
 
 - Git checkout revert the changes which is not been added
 - That means if you already use git add, the file will not be reverted
+
+# Git diff
+
+- I just found when you added the change, git diff will show nothing
+- searched on Google, should use git diff --staged
+- staged is a area which git add those files in
+
+# Stage area
+
+- Git has 3 area: working, stage, master
+- we work in working area, add add change in stage area, commit add change to master
