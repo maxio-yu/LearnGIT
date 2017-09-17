@@ -46,4 +46,7 @@ but nobody know the root cause. Below is someone's comments:
 - Git reset change the HEAD (a pointer)
 - Git reflog checks all command you entered.
 
+## Git add
 
+- Git add is for change, not file
+- if you change the file after you add it, the later change will not be submitted if you commit
