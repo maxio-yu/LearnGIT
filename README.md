@@ -110,3 +110,4 @@ D---E---F---G master
 - make log clear for the history chain
 
 ## Git pull --rebase 
+- one test from test branch. 
