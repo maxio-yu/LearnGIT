@@ -67,3 +67,7 @@ but nobody know the root cause. Below is someone's comments:
 
 - Git has 3 area: working, stage, master
 - we work in working area, add add change in stage area, commit add change to master
+
+## Git branch
+
+- create test branch
