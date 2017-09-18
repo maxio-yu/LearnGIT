@@ -80,12 +80,3 @@ but nobody know the root cause. Below is someone's comments:
 - use below ways to set the defalt behavior so next time 'git push' without other parameter will work:
     1. git push --set-upstream origin test 
     2. git branch --set-upstream-to origin/test
-=======
-## Git branch
-
-- create test branch
-- use git push origin test to create the new test branch on GitHub.
-- Although git push origin test can push code, but local git don't record it as default setting
-- use below ways to set the defalt behavior so next time 'git push' without other parameter will work:
-    1. git push --set-upstream origin test 
-    2. git branch --set-upstream-to origin/test
