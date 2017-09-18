@@ -54,3 +54,4 @@ but nobody know the root cause. Below is someone's comments:
 ## Git branch
 
 - create test branch
+- use git push origin test to create the new test branch on GitHub.
