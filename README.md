@@ -104,3 +104,7 @@ D---E---F---G master
 - it's not the old A, B, C anymore
 - git log may confusing, but git log --graph is more clear.
 - check https://git-scm.com/docs/git-rebase for more details.
+
+## Git log --graph
+
+- make log clear for the history chain
