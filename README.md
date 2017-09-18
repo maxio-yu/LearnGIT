@@ -110,4 +110,3 @@ D---E---F---G master
 - make log clear for the history chain
 
 ## Git pull --rebase 
-- some test on master side
