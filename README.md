@@ -57,18 +57,18 @@ but nobody know the root cause. Below is someone's comments:
 - Git checkout revert the changes which is not been added
 - That means if you already use git add, the file will not be reverted
 
-# Git diff
+## Git diff
 
 - I just found when you added the change, git diff will show nothing
 - searched on Google, should use git diff --staged
 - staged is a area which git add those files in
 
-# Stage area
+## Stage area
 
 - Git has 3 area: working, stage, master
 - we work in working area, add add change in stage area, commit add change to master
 
-# Rebase
+## Rebase
 
 - Add rebase area in master branch
 
@@ -80,3 +80,7 @@ but nobody know the root cause. Below is someone's comments:
 - use below ways to set the defalt behavior so next time 'git push' without other parameter will work:
     1. git push --set-upstream origin test 
     2. git branch --set-upstream-to origin/test
+
+ ## Rebase and push
+
+ - when did rebase and try push, server will decline
