@@ -88,3 +88,4 @@ but nobody know the root cause. Below is someone's comments:
 ## rebase, pull generate abundant commits 
 
 - there are different commit id for same change after rebase, pull
+- sometest
