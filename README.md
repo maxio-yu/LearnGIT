@@ -68,10 +68,6 @@ but nobody know the root cause. Below is someone's comments:
 - Git has 3 area: working, stage, master
 - we work in working area, add add change in stage area, commit add change to master
 
-## Rebase
-
-- Add rebase area in master branch
-
 ## Git branch
 
 - create test branch
@@ -81,11 +77,30 @@ but nobody know the root cause. Below is someone's comments:
     1. git push --set-upstream origin test 
     2. git branch --set-upstream-to origin/test
 
-## Rebase and push
+## Rebase
 
+- Add rebase area in master branch
+
+### Rebase and push
  - when did rebase and try push, server will decline
+ - it suggest you to do git pull, commit and push
+### rebase, pull generate abundant commits 
+- I tried pull,commit,push, then when you use 'git log', there are 2 commit id for same change.
+- it's because rebase does not simply change the link sequence, it generate new commit id:
 
-## rebase, pull generate abundant commits 
-
-- there are different commit id for same change after rebase, pull
-- sometest
+```
+      A---B---C topic
+     /
+D---E---F---G master
+```
+after rebase: git rebase master or git rebase master topic
+```
+              A'---B'---C' topic
+             /
+D---E---F---G master
+             \
+              A---B---C ( this line will not show until it's merged )
+```
+- it's not the old A, B, C anymore
+- git log may confusing, but git log --graph is more clear.
+- check https://git-scm.com/docs/git-rebase for more details.
