@@ -81,6 +81,10 @@ but nobody know the root cause. Below is someone's comments:
     1. git push --set-upstream origin test 
     2. git branch --set-upstream-to origin/test
 
- ## Rebase and push
+## Rebase and push
 
  - when did rebase and try push, server will decline
+
+## rebase, pull generate abundant commits 
+
+- there are different commit id for same change after rebase, pull
