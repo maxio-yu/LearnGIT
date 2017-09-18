@@ -108,3 +108,5 @@ D---E---F---G master
 ## Git log --graph
 
 - make log clear for the history chain
+
+## Git pull --rebase 
