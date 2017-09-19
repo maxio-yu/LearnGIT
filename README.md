@@ -125,3 +125,10 @@ D---E---F---G master
 - 4th test from test.
 - 4thh test from master
 - 5th test from master
+- 5th test from test
+
+## Git fetch
+- Add some thing from server
+- Git record the server's status locally
+- fetch means to update status from server
+- fetch won't change your local branch's status
