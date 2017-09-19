@@ -128,3 +128,6 @@ D---E---F---G master
 
 ## Git fetch
 - Add some thing from server
+- Git record the server's status locally
+- fetch means to update status from server
+- fetch won't change your local branch's status
