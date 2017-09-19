@@ -118,3 +118,10 @@ D---E---F---G master      /
 - Git record the server's status locally
 - fetch means to update status from server
 - fetch won't change your local branch's status
+
+## Remote
+- git branch -a can see branches in server
+- I noticed some branch which already been deleted on server still listed
+- git remote show origin can check more details
+- those branch are 'stale' status
+- use git remote prune to clean them
