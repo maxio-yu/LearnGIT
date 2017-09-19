@@ -89,43 +89,29 @@ but nobody know the root cause. Below is someone's comments:
 - it's because rebase does not simply change the link sequence, it generate new commit id:
 
 ```
-      A---B---C topic
+      A---B---C test
      /
 D---E---F---G master
 ```
 after rebase: git rebase master or git rebase master topic
 ```
-              A'---B'---C' topic
-             /
-D---E---F---G master
-             \
-              A---B---C ( this line will not show until it's merged )
+              A'---B'---C'---D test
+             /              /
+D---E---F---G master      /
+             \          /
+              A---B---C 
 ```
 - it's not the old A, B, C anymore
 - git log may confusing, but git log --graph is more clear.
 - check https://git-scm.com/docs/git-rebase for more details.
+- I did lots of test to simply rebase server's test branch, but no way except for 'push --hard'
+- 'push --hard' will abundant old A B C commit and replace it with the new A' B' C'
+- then I found it's not suggest to do it: https://git-scm.com/book/en/v2/Git-Branching-Rebasing
 
 ## Git log --graph
 
 - make log clear for the history chain
 
-## Git pull --rebase 
-- one test from test branch. 
-- another test from master
-- two test from master branch.
-- 2nd round test from test.
-- tidy
-- 3rd test from test.
-- 3rd test from master.
-- 3rd test from test.
-- 3rd test from master.
-- tidy
-- 4th test from test.
-- 4thh test from master
-- 4th test from test.
-- 4thh test from master
-- 5th test from master
-- 5th test from test
 
 ## Git fetch
 - Add some thing from server
