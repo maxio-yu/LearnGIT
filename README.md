@@ -76,6 +76,8 @@ but nobody know the root cause. Below is someone's comments:
 - use below ways to set the defalt behavior so next time 'git push' without other parameter will work:
     1. git push --set-upstream origin test 
     2. git branch --set-upstream-to origin/test
+- After more test, I found if server don't have the test branch, you need to push first:
+    - git push origin test
 
 ## Rebase
 
@@ -125,3 +127,10 @@ D---E---F---G master      /
 - git remote show origin can check more details
 - those branch are 'stale' status
 - use git remote prune to clean them
+
+## Understand Origin/Remote
+- Remote is the remote side (server side)
+- Origin is the default name when you clone a git from server
+- git remote -v can see remote info
+- you can add more remote by git remote add name location 
+- more ref check git help remote
