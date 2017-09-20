@@ -165,3 +165,18 @@ D---E---F---G master      /
 - git tag <tagname> to create a tag
 - git tag v0.5 == git tag v0.5 HEAD
 - can create tag for old commit: git tag v0.1 [commit_id]
+
+## Detached HEAD
+- I tried a wrong command: git checkout v0.5, which I mean git reset --hard v0.5
+- it has some warning message but i ignored
+- when I made some change, commit, and want to push, it declined
+- then I use git status, git branch to check, i found i'm not on master branch
+- below is the user guide for checkout commit:
+    >git checkout --detach [<branch>], git checkout [--detach] <commit>
+    >Prepare to work on top of <commit>, by detaching HEAD at it (see "DETACHED HEAD" section), and updating the index and the files in the working tree. Local modifications to
+    >the files in the working tree are kept, so that the resulting working tree will be the state recorded in the commit plus the local modifications.
+    >
+    >When the <commit> argument is a branch name, the --detach option can be used to detach HEAD at the tip of the branch (git checkout <branch> would check out that branch
+    >        without detaching HEAD).
+    >
+    >Omitting <branch> detaches HEAD at the tip of the current branch.
