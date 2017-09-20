@@ -78,6 +78,8 @@ but nobody know the root cause. Below is someone's comments:
     2. git branch --set-upstream-to origin/test
 - After more test, I found if server don't have the test branch, you need to push first:
     - git push origin test
+- when you clone a git, you're on master branch, if you want to checkout to dev branch (already have on server),
+  you should try git branch dev origin/dev
 
 ## Rebase
 
