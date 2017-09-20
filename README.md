@@ -136,3 +136,8 @@ D---E---F---G master      /
 - more ref check git help remote
 
 ## Some content before stash
+
+## How to manage your branches
+- master should be stable
+- work usually on dev
+- merge -no-ff (no fast forward) can keep merge history
