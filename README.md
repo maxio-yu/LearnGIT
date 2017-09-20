@@ -150,3 +150,11 @@ D---E---F---G master      /
 
 ## Work flow
 - modify, git pull, [git merge,] git add, git commit, git push
+
+## understand HEAD
+- HEAD is the point point to the current commit id
+- HEAD is the default value for git commands:
+    - git branch dev == git branch dev HEAD
+    - git diff == git diff HEAD
+    - git show == git show HEAD
+    - etc.
