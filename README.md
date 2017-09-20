@@ -145,3 +145,6 @@ D---E---F---G master      /
 - use git stash list to see the stashed list
 - use git stash pop to recover the changes
 - git apply + git drop == git pop
+
+## Work flow
+- modify, git pull, [git merge,] git add, git commit, git push
