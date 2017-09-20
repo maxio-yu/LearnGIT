@@ -158,3 +158,10 @@ D---E---F---G master      /
     - git diff == git diff HEAD
     - git show == git show HEAD
     - etc.
+
+## Tag
+- tag is more readable
+- git tag show all tags
+- git tag <tagname> to create a tag
+- git tag v0.5 == git tag v0.5 HEAD
+- can create tag for old commit: git tag v0.1 [commit_id]
