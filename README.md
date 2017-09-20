@@ -134,3 +134,5 @@ D---E---F---G master      /
 - git remote -v can see remote info
 - you can add more remote by git remote add name location 
 - more ref check git help remote
+
+## Some content before stash
