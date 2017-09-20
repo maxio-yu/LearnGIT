@@ -135,9 +135,13 @@ D---E---F---G master      /
 - you can add more remote by git remote add name location 
 - more ref check git help remote
 
-## Some content before stash
-
 ## How to manage your branches
 - master should be stable
 - work usually on dev
 - merge -no-ff (no fast forward) can keep merge history
+
+## Git Stash
+- Use git stash to save your work temporarily
+- use git stash list to see the stashed list
+- use git stash pop to recover the changes
+- git apply + git drop == git pop
