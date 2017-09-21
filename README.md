@@ -162,7 +162,7 @@ D---E---F---G master      /
 ## Tag
 - tag is more readable
 - git tag show all tags
-- git tag <tagname> to create a tag
+- git tag &lttagname&gt to create a tag
 - git tag v0.5 == git tag v0.5 HEAD
 - can create tag for old commit: git tag v0.1 [commit_id]
 
@@ -172,11 +172,15 @@ D---E---F---G master      /
 - when I made some change, commit, and want to push, it declined
 - then I use git status, git branch to check, i found i'm not on master branch
 - below is the user guide for checkout commit:
-    >git checkout --detach [<branch>], git checkout [--detach] <commit>
-    >Prepare to work on top of <commit>, by detaching HEAD at it (see "DETACHED HEAD" section), and updating the index and the files in the working tree. Local modifications to
+    >git checkout --detach [&ltbranch&gt], git checkout [--detach] &ltcommit&gt
+    >Prepare to work on top of &ltcommit&gt, by detaching HEAD at it (see "DETACHED HEAD" section), and updating the index and the files in the working tree. Local modifications to
     >the files in the working tree are kept, so that the resulting working tree will be the state recorded in the commit plus the local modifications.
     >
-    >When the <commit> argument is a branch name, the --detach option can be used to detach HEAD at the tip of the branch (git checkout <branch> would check out that branch
+    >When the &ltcommit&gt argument is a branch name, the --detach option can be used to detach HEAD at the tip of the branch (git checkout &ltbranch&gt would check out that branch
     >        without detaching HEAD).
     >
-    >Omitting <branch> detaches HEAD at the tip of the current branch.
+    >Omitting &ltbranch&gt detaches HEAD at the tip of the current branch.
+
+## Side episode
+- Markdown cannot show &gt &lt &ge &le directly
+- need to use \&gt \&lt \&ge \&le to replace
