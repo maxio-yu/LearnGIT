@@ -72,8 +72,8 @@ but nobody know the root cause. Below is someone's comments:
 
 - create test branch
 - use git push origin test to create the new test branch on GitHub.
-- Although git push origin test can push code, but local git don't record it as default setting
-- use below ways to set the defalt behavior so next time 'git push' without other parameter will work:
+- A&lt;hough git push origin test can push code, but local git don't record it as defau&lt; setting
+- use below ways to set the defa&lt; behavior so next time 'git push' without other parameter will work:
     1. git push --set-upstream origin test 
     2. git branch --set-upstream-to origin/test
 - After more test, I found if server don't have the test branch, you need to push first:
@@ -132,7 +132,7 @@ D---E---F---G master      /
 
 ## Understand Origin/Remote
 - Remote is the remote side (server side)
-- Origin is the default name when you clone a git from server
+- Origin is the defau&lt; name when you clone a git from server
 - git remote -v can see remote info
 - you can add more remote by git remote add name location 
 - more ref check git help remote
@@ -153,7 +153,7 @@ D---E---F---G master      /
 
 ## understand HEAD
 - HEAD is the point point to the current commit id
-- HEAD is the default value for git commands:
+- HEAD is the defau&lt; value for git commands:
     - git branch dev == git branch dev HEAD
     - git diff == git diff HEAD
     - git show == git show HEAD
@@ -162,7 +162,7 @@ D---E---F---G master      /
 ## Tag
 - tag is more readable
 - git tag show all tags
-- git tag &lttagname&gt to create a tag
+- git tag &lt;tagname&gt; to create a tag
 - git tag v0.5 == git tag v0.5 HEAD
 - can create tag for old commit: git tag v0.1 [commit_id]
 
@@ -172,15 +172,15 @@ D---E---F---G master      /
 - when I made some change, commit, and want to push, it declined
 - then I use git status, git branch to check, i found i'm not on master branch
 - below is the user guide for checkout commit:
-    >git checkout --detach [&ltbranch&gt], git checkout [--detach] &ltcommit&gt
-    >Prepare to work on top of &ltcommit&gt, by detaching HEAD at it (see "DETACHED HEAD" section), and updating the index and the files in the working tree. Local modifications to
-    >the files in the working tree are kept, so that the resulting working tree will be the state recorded in the commit plus the local modifications.
+    >git checkout --detach [&lt;branch&gt;], git checkout [--detach] &lt;commit&gt;
+    >Prepare to work on top of &lt;commit&gt;, by detaching HEAD at it (see "DETACHED HEAD" section), and updating the index and the files in the working tree. Local modifications to
+    >the files in the working tree are kept, so that the resu&lt;ing working tree will be the state recorded in the commit plus the local modifications.
     >
-    >When the &ltcommit&gt argument is a branch name, the --detach option can be used to detach HEAD at the tip of the branch (git checkout &ltbranch&gt would check out that branch
+    >When the &lt;commit&gt; argument is a branch name, the --detach option can be used to detach HEAD at the tip of the branch (git checkout &lt;branch&gt; would check out that branch
     >        without detaching HEAD).
     >
-    >Omitting &ltbranch&gt detaches HEAD at the tip of the current branch.
+    >Omitting &lt;branch&gt; detaches HEAD at the tip of the current branch.
 
 ## Side episode
-- Markdown cannot show &gt &lt &ge &le directly
-- need to use \&gt \&lt \&ge \&le to replace
+- Markdown cannot show &gt; &lt; &ge; &le; directly
+- need to use \&gt; \&lt; \&ge; \&le; to replace
