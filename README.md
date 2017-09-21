@@ -153,7 +153,7 @@ D---E---F---G master      /
 
 ## understand HEAD
 - HEAD is the point point to the current commit id
-- HEAD is the defau&lt; value for git commands:
+- HEAD is the default; value for git commands:
     - git branch dev == git branch dev HEAD
     - git diff == git diff HEAD
     - git show == git show HEAD
@@ -181,6 +181,14 @@ D---E---F---G master      /
     >
     >Omitting &lt;branch&gt; detaches HEAD at the tip of the current branch.
 
-## Side episode
+### Side episode
 - Markdown cannot show &gt; &lt; &ge; &le; directly
 - need to use \&gt; \&lt; \&ge; \&le; to replace
+
+## Ignore special files
+- create a .gitignore under git's root dir.
+- git will ignore files match pattern in .gitignore
+- shell pattern
+- use git add -f FILE to add files match pattern in .gitignore
+- use git check-ignore -v FILE to check which it matched
+- remember to add .gitignore in .gitignore
