@@ -1,4 +1,4 @@
-#This is a study memo
+# This is a study memo
 
 - Last time I use GIT was about 4 years ago when I was in Marvell
 - I am using Perforce in my company
@@ -192,3 +192,6 @@ D---E---F---G master      /
 - use git add -f FILE to add files match pattern in .gitignore
 - use git check-ignore -v FILE to check which it matched
 - remember to add .gitignore in .gitignore
+
+## Git revert/reset/checkout
+This is a hard topic
